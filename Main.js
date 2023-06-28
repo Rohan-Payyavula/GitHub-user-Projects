@@ -25,7 +25,7 @@ async function getUserProjects(username) {
             const divElem = document.createElement('div');
             addParagraph(`Projects for User ${username}:`, true);
             projects.forEach((project) => {
-                addParagraph(`- ${project.name}`);
+                addParagraph(`-> ${project.name}`);
             });
         } else {
             addParagraph(`No projects found for User ${username}.`);
